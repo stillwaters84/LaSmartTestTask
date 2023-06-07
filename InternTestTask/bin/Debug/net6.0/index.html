@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/konva@9.1.0/konva.min.js"></script>
+    <meta charset="utf-8" />
+    <title>TestPoint</title>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var serviceURL = 'https://localhost:7245/point';
+
+            $.ajax({
+                type: "GET",
+                url: serviceURL,
+                data: param = "",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: successFunc,
+                error: errorFunc
+            });
+
+            function successFunc(data, status) {
+                //var point1 = new point(data[0][0], data[0][1], data[0][2], data[0][3], data[0][4]);
+                var point1 = JSON.parse(data);
+                alert(point1);
+            }
+
+            function errorFunc() {
+                alert('error');
+            }
+
+            class point {
+                constructor(id, x, y, radius, colour){
+                    this.id = id;
+                    this.x = x;
+                    this.y = y;
+                    this.radius = radius;
+                    this.colour = colour;
+                }
+            }
+        });
+    </script>
+</head>
+<body>
+    <p>dina l(oh my god)oveable person</p>
+    <h1 id="test1"></h1>
+
+    // can't write func
+    <script>
+        document.getElementById("test1").innerHTML = "hello.net";
+    </script>
+
+
+</body>
+</html>
