@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2WMk/s2coomrJfksiH87pt2dAwOKYVsioB0u1FVHw+sBOyc0YpBylB9IfAhi6tPh4NvmgHR/Gw3ivOgYJ6iTVg==",
+  "dgSpecHash": "XiUvs5taieCl5gLHhgGfGXTxi4YEl6ejog1AXPLbBcEHApcuuhgnLyBYA/Y9zr01lRUMaUM4xF4ENwcBkKNDUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\egart\\OneDrive\\Рабочий стол\\TestProjects\\LaSmartTest\\InternTestTask\\InternTestTask\\InternTestTask.csproj",
+  "projectFilePath": "C:\\Users\\egart\\OneDrive\\Рабочий стол\\Репозитории\\LaSmartTestTask\\InternTestTask\\InternTestTask.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\egart\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
     "C:\\Users\\egart\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.5\\microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",

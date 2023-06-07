@@ -10,26 +10,32 @@
         $(document).ready(function () {
             var serviceURL = 'https://localhost:7245/point';
 
+            $("p").css("background-color", "light-grey");
+
             $.ajax({
                 type: "GET",
                 url: serviceURL,
-                data: param = "",
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
+                dataType: 'json',
                 success: successFunc,
                 error: errorFunc
             });
 
             function successFunc(data, status) {
-                //var point1 = new point(data[0][0], data[0][1], data[0][2], data[0][3], data[0][4]);
-                var point1 = JSON.parse(data);
-                alert(point1);
+                var parsedData = JSON.parse(data[0]);
+                let point1 = JSON.stringify(data[0]);
+                let point2 = JSON.stringify(data[1]);
+                $("#pointtest1").text(point1);
+                $("#pointtest2").text(point2);
+                //alert(point1);
+                //var point1 
+                //alert(point1);
             }
 
             function errorFunc() {
                 alert('error');
             }
 
+            //just in case
             class point {
                 constructor(id, x, y, radius, colour){
                     this.id = id;
@@ -43,12 +49,19 @@
     </script>
 </head>
 <body>
-    <p>dina l(oh my god)oveable person</p>
+    
     <h1 id="test1"></h1>
 
-    // can't write func
+    <h2>This is Point 1 from database which I got with AJAX</h2>
+    <p id="pointtest1"></p>
+    
+    <h2>This is Point 2 from database which I got with AJAX</h2>
+    <p id="pointtest2"></p>
+    <div class="display_data"></div>
+
     <script>
-        document.getElementById("test1").innerHTML = "hello.net";
+        //i haven't finished parsing data from ajax. going to start drawing points after fixing this
+        document.getElementById("test1").innerHTML = "LaSmart Unfinished Test Task";
     </script>
 
 

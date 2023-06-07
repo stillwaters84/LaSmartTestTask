@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\egart\\OneDrive\\Рабочий стол\\TestProjects\\LaSmartTest\\InternTestTask\\InternTestTask\\InternTestTask.csproj": {}
+    "C:\\Users\\egart\\OneDrive\\Рабочий стол\\Репозитории\\LaSmartTestTask\\InternTestTask\\InternTestTask.csproj": {}
   },
   "projects": {
-    "C:\\Users\\egart\\OneDrive\\Рабочий стол\\TestProjects\\LaSmartTest\\InternTestTask\\InternTestTask\\InternTestTask.csproj": {
+    "C:\\Users\\egart\\OneDrive\\Рабочий стол\\Репозитории\\LaSmartTestTask\\InternTestTask\\InternTestTask.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\egart\\OneDrive\\Рабочий стол\\TestProjects\\LaSmartTest\\InternTestTask\\InternTestTask\\InternTestTask.csproj",
+        "projectUniqueName": "C:\\Users\\egart\\OneDrive\\Рабочий стол\\Репозитории\\LaSmartTestTask\\InternTestTask\\InternTestTask.csproj",
         "projectName": "InternTestTask",
-        "projectPath": "C:\\Users\\egart\\OneDrive\\Рабочий стол\\TestProjects\\LaSmartTest\\InternTestTask\\InternTestTask\\InternTestTask.csproj",
+        "projectPath": "C:\\Users\\egart\\OneDrive\\Рабочий стол\\Репозитории\\LaSmartTestTask\\InternTestTask\\InternTestTask.csproj",
         "packagesPath": "C:\\Users\\egart\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\egart\\OneDrive\\Рабочий стол\\TestProjects\\LaSmartTest\\InternTestTask\\InternTestTask\\obj\\",
+        "outputPath": "C:\\Users\\egart\\OneDrive\\Рабочий стол\\Репозитории\\LaSmartTestTask\\InternTestTask\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\egart\\AppData\\Roaming\\NuGet\\NuGet.Config",

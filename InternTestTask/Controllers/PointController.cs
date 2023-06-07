@@ -9,37 +9,37 @@ namespace InternTestTask.Controllers
     [Route("[controller]")]
     public class PointController : ControllerBase
     {
-        private readonly IPointService _serivce;
+        private readonly IPointService _service;
         public PointController(IPointService service)
         {
-            _serivce = service;
+            _service = service;
         }
         [HttpGet]
-        public IActionResult GetAll() 
+        public IEnumerable<Point> GetAll() 
         {
-            return Ok(_serivce.GetAll());
+            return _service.GetAll();
         }
         [HttpGet("{id}")]
         public IActionResult Get(int id) 
         { 
-            return Ok(_serivce.Get(id));
+            return Ok(_service.Get(id));
         }
         [HttpPost]
         public IActionResult Insert(Point point)
         {
-            _serivce.Insert(point);
+            _service.Insert(point);
             return Ok();
         }
         [HttpPut]
         public IActionResult Update(Point point)
         {
-            _serivce.Update(point);
+            _service.Update(point);
             return Ok();
         }
         [HttpDelete]
         public IActionResult Delete(int id)
         {
-            _serivce.Delete(id);
+            _service.Delete(id);
             return Ok();
         }
     }

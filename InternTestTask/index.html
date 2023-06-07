@@ -21,8 +21,8 @@
             });
 
             function successFunc(data, status) {
-                let point1 = JSON.stringify(data[0]);
-                let point2 = JSON.stringify(data[1]);
+                let point1 = data[0];
+                let point2 = data[1];
                 $("#pointtest1").text(point1);
                 $("#pointtest2").text(point2);
                 //alert(point1);
@@ -34,7 +34,7 @@
                 alert('error');
             }
 
-            //just in case
+            //just in case 
             class point {
                 constructor(id, x, y, radius, colour){
                     this.id = id;
@@ -59,7 +59,7 @@
     <div class="display_data"></div>
 
     <script>
-        //i haven't finished parsing data from ajax. going to start drawing points after fixing this
+        //finished getting data with ajax, need to draw with konva.js
         document.getElementById("test1").innerHTML = "LaSmart Unfinished Test Task";
     </script>
 
